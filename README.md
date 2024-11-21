@@ -38,7 +38,7 @@ Flappy Bird is a simple arcade game where the player controls a bird and navigat
 ## 📸 Screenshots
 
 ### Starting
-<img src="image/SSstart.png" alt="tarting" width="200" height="150"/>
+<img src="image/SSstart.png" alt="tarting" width="200"/>
 *This is how the starting of the game looks like, click on the screen to start the game*
 
 ### Playing 

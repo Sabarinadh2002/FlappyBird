@@ -40,9 +40,9 @@ scrollspeed = 4
 
 
 #load image
-bg = pygame.image.load('img/bgimg.png')
-gimg = pygame.image.load('img/ground.png')
-button_img = pygame.image.load('img/restart.png')
+bg = pygame.image.load('image/bgimg.png')
+gimg = pygame.image.load('image/ground.png')
+button_img = pygame.image.load('image/restart.png')
 
 def draw_text(text,font,textcol,x,y):
     img = font.render(text, True,textcol)
@@ -65,7 +65,7 @@ class Bird(pygame.sprite.Sprite):
         self.index = 0
         self.counter = 0
         for num in range(1,4):
-            img = pygame.image.load(f'img/bird{num}.png')
+            img = pygame.image.load(f'image/bird{num}.png')
             self.images.append(img)
         self.image = self.images[self.index]
         self.rect = self.image.get_rect()
@@ -110,7 +110,7 @@ class Bird(pygame.sprite.Sprite):
 class Pipe(pygame.sprite.Sprite):
     def __init__(self, x,y,position):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load("img/pipe.png")
+        self.image = pygame.image.load("image/pipe.png")
         self.rect = self.image.get_rect()
         #pos 1 = froom top , -1 from bottom
         if position == 1:
@@ -161,8 +161,8 @@ birdgroup.add(flappy)
 
 
 #load image
-bg = pygame.image.load('img/bgimg.png')
-gimg = pygame.image.load('img/ground.png')
+bg = pygame.image.load('image/bgimg.png')
+gimg = pygame.image.load('image/ground.png')
 
 # create restart button 
 button = Button(screenw // 2 - 50, screenh // 2 - 100, button_img)
